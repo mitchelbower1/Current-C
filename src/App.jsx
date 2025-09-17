@@ -26,7 +26,6 @@ function App() {
           const data = await res.json();
           setConverted(data.rates[toCurrency]);
         } catch (err) {
-          console.error(err.message);
           setError(err.message);
           setConverted("");
         } finally {
