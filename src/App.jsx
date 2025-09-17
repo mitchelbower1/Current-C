@@ -64,11 +64,12 @@ function App() {
           value={fromCurrency}
           onChange={(e) => setFromCurrency(e.target.value)}
         >
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-          <option value="CAD">CAD</option>
-          <option value="INR">INR</option>
-          <option value="AUD">AUD</option>
+          <option value="USD">USD $</option>
+          <option value="EUR">EUR €</option>
+          <option value="CAD">CAD C$</option>
+          <option value="INR">INR ₹</option>
+          <option value="AUD">AUD AU$</option>
+          <option value="JPY">JPY ¥</option>
         </select>
 
         <button className="swap-button" onClick={handleSwap}>
@@ -78,11 +79,12 @@ function App() {
           value={toCurrency}
           onChange={(e) => setToCurrency(e.target.value)}
         >
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-          <option value="CAD">CAD</option>
-          <option value="INR">INR</option>
-          <option value="AUD">AUD</option>
+          <option value="USD">USD $</option>
+          <option value="EUR">EUR €</option>
+          <option value="CAD">CAD C$</option>
+          <option value="INR">INR ₹</option>
+          <option value="AUD">AUD AU$</option>
+          <option value="JPY">JPY ¥</option>
         </select>
         {error && <ErrorMessage message={error} />}
         {isLoading && <p className="loading">Converting...</p>}
@@ -115,6 +117,9 @@ const Header = () => {
         </li>
         <li>
           <CA className="flag-icon" />
+        </li>
+        <li>
+          <JP className="flag-icon" />
         </li>
       </ul>
     </header>
