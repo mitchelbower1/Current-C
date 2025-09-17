@@ -75,10 +75,11 @@ li {
   align-items: center;
   flex-direction: column;
   border: 2px, solid, black;
-  background-color: rgba(255, 255, 255, 0.534);
-  /* filter: drop-shadow(9px 11px 18px #262626); */
+  background-color: rgba(255, 255, 255, 0.459);
   width: 50vw;
   height: 60vh;
+  min-height: 550px;
+  max-height: 650px;
   margin-top: 50px;
   border-radius: 15px;
   border: none;
@@ -95,9 +96,22 @@ li {
   border: none;
 }
 
-select:hover {
-  background-color: rgba(71, 103, 244, 0.39);
+/* select:hover {
+  background-color: rgba(71, 102, 244, 0.1);
+  transition: background-color 500ms;
   transition-duration: 400ms;
+  transform: scale(1.1);
+} */
+
+select:hover {
+  background-color: rgba(71, 102, 244, 0.1);
+  transition: background-color 500ms;
+}
+
+select:focus {
+  background-color: rgba(71, 102, 244, 0.2);
+  outline: none;
+  border: 2px solid rgba(71, 102, 244, 1);
 }
 
 select {
@@ -109,6 +123,11 @@ select {
   margin: 15px;
   border: none;
   cursor: pointer;
+}
+
+option:hover {
+  background-color: rgba(71, 102, 244, 1);
+  transition-duration: 500ms;
 }
 
 .swap-button {
