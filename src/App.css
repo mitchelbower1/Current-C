@@ -118,7 +118,7 @@ select {
   padding: 10px;
   border-radius: 10px;
   height: 5vh;
-  width: 15vw;
+  width: 13vw;
   font-size: 20px;
   margin: 15px;
   border: none;
@@ -185,7 +185,7 @@ option:hover {
   color: white;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 950px) {
   * {
     margin: 0;
     padding: 0;
